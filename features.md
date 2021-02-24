@@ -16,3 +16,4 @@
 | Mode: Customer Support | Provides the prices, basic hints and automatized text for replies, as well as internal links | 1.0.0              |               |
 | Language Support       | Present tool in English and German                                                           | 1.0.0              |               |
 | Custom Data Source     | Define which API will provide the data                                                       | 1.0.0              |               |
+| Light / Dark Mode      | Toggle to make use different color schemes                                                   | 1.0.0              |               |

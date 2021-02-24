@@ -7,6 +7,7 @@ This program only provides the frontend and the expected datastructure.
 ## Status
 
 Stage: Pre-Alpha
+
 Latest Stable Version: none
 
 ## Technical Details
