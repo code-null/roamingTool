@@ -20,3 +20,4 @@
 | Light / Dark Mode      | Toggle to make use different color schemes                                                   | 1.0.0              |               |
 | Country Swap           | Swap selected countries                                                                      | 1.0.0              |               |
 | Partner Network        | Display partners where customers can get cheaper prices                                      | 1.0.0              |               |
+| Available Packages     | Display packages that can be booked, based on registred tariffs                              | 1.0.0              |               |

@@ -1,0 +1,72 @@
+{
+    "countries": [
+        {
+            "name": "Germany",
+            "zone": "EUROPE",
+            "isHome": true
+        },
+        {
+            "name": "Albania",
+            "zone": "EUROPE_1",
+            "dataZone": "DATA_EUROPE_1",
+            "partners": ["Fictional Carrier Albania Inc"]
+        },
+        {
+            "name": "Madeira",
+            "zone": "",
+            "altCountrey": "Portugal"
+        },
+        {
+            "name": "Cuba",
+            "zone": "",
+            "comments": [{"content": "No roaming possible.", "displayType": "USER"}]
+        }
+    ],
+    "zones":{
+        "EUROPE":{
+            "isEURoaming" : "true",
+            "inCalls" : "free",
+            "outCallsMobileDefault" : "free",
+            "outCallsLandDefault" : "RT_MOBILE",
+            "inSMS": "free",
+            "inMMS": "free",
+            "outSMSDefault": "free",
+            "outMMSDefault" : "0,36€/SMS",
+            "data" : "free",
+    
+            "EUROPE": {},
+            "WOLRD": {
+                "outCallsMobile": "1,45 €/Min.",
+                "outCallsLand": "RT_MOBILE"
+            },
+            "ZONE_1":{
+                "altZone": "WORLD"
+            },
+            "tariffs": ["WORLD_TARIFF"]
+  
+        },
+        "WORLD_TARIFF":{
+            "type": "RT_TARIFF",
+            "displayName": "Travel Package World",
+            "bookingPrice": "4,99€",
+            "inCalls" : "free",
+            "outCallsMobileDefault" : "free",
+            "outCallsLandDefault" : "RT_MOBILE",
+            "inSMS": "free",
+            "inMMS": "free",
+            "outSMSDefault": "free",
+            "outMMSDefault" : "0,36€/SMS",
+            "data" : "free",
+            "outbound": {
+                "EUROPE": {},
+                "WOLRD": {
+                    "outCallsMobile": "0,45 €/Min.",
+                    "outCallsLand": "RT_MOBILE"
+                },
+                "ZONE_1":{
+                    "altZone": "WORLD"
+                }
+            }
+        }
+    }
+}
