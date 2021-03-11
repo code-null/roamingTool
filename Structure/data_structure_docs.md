@@ -2,15 +2,18 @@
 
 All data can be provided as a .json file or as JSON data through an API.
 
-The following key words are reserved and shoult not be used.
+The following key words are reserved and should not be used.
 
 - RT_MOBILE: Sets the value to the same as defined for calls to a mobile connection; only for outbound calls to a landline
 - RT_UNDEFINED: Sets the value to the text, for undefined values (e.g. "No prices available")
-- RT_TARFIF: Type needs to be set to register a definition as a tariff instead of a zone.
+- RT_TARIFF: Type needs to be set to register a definition as a tariff instead of a zone.
+- RT_ALWAYS: Sets the condition when to display a comment
+- RT_USER: Sets the condition when to display a comment
+- RT_TARGET: Sets the condition when to display a comment
 
 ## **Country Data**
 
-The following fields are avaiable.
+The following fields are available.
 
 ### **name**
 
@@ -34,7 +37,7 @@ Name of the country.
 
 **Example Value(s):** ZONE_1, WORLD
 
-Identifier of the default zone. This will be used if no other specific zone was found. If this zone is an empty string and no other information is avaiable, it will show the empty price text, defined in the [settings]().
+Identifier of the default zone. This will be used if no other specific zone was found. If this zone is an empty string and no other information is available, it will show the empty price text, defined in the [settings]().
 
 ### **isHome**
 
@@ -120,11 +123,11 @@ Alternative zone for data prices, that should be used if it differs from the def
 
 Define comments that should be displayed depending on the display type. You can define multiple comments for different conditions. A display type can be one of the following values:
 
-**ALWAYS:** Will display the comment, regardless this country is used as a user location or target location.
+**RT_ALWAYS:** Will display the comment, regardless this country is used as a user location or target location.
 
-**USER:** Will display the comment if the country is selected as the users location.
+**RT_USER:** Will display the comment if the country is selected as the users location.
 
-**TARGET:** Will display the comment if the country is selected as the targets location.
+**RT_TARGET:** Will display the comment if the country is selected as the targets location.
 
 ### **altCountry**
 
@@ -320,7 +323,7 @@ Holds the prices for services to the targeted location. Use the zoneID of the ta
 
 **Example Value(s):** RT_TARIFF
 
-Defines wether this zone will be registred as a tariff and displayed as a selection option. If this field is set, displayName also needs to be defined. A tariff will only be avaiable if the base zone defines it in the tariffs property.
+Defines wether this zone will be registered as a tariff and displayed as a selection option. If this field is set, displayName also needs to be defined. A tariff will only be available if the base zone defines it in the tariffs property.
 
 ### **displayName**
 
@@ -374,15 +377,15 @@ Defines wether this zone falls under the EU regulations for roaming. Set this to
 
 **Value for:** As per definition
 
-**Example Value(s):** \[{"content": "No data roaming avaiable.", "displayType": "TARGET"}]
+**Example Value(s):** \[{"content": "No data roaming available.", "displayType": "TARGET"}]
 
 Define comments that should be displayed depending on the display type. You can define multiple comments for different conditions. A display type can be one of the following values:
 
-**ALWAYS:** Will display the comment, regardless this zone is used as a user location or target location.
+**RT_ALWAYS:** Will display the comment, regardless this zone is used as a user location or target location.
 
-**USER:** Will display the comment if the zone is selected as the users location.
+**RT_USER:** Will display the comment if the zone is selected as the users location.
 
-**TARGET:** Will display the comment if the zone is selected as the targets location.
+**RT_TARGET:** Will display the comment if the zone is selected as the targets location.
 
 ### **outCallsMobile**
 
@@ -452,7 +455,7 @@ The price of outgoing MMS. If not given, the field outMMSDefault needs to be giv
 
 **Example Value(s):** ZONE_1, WORLD
 
-If this field is set, the same prices apply, that are defined in the given alternative target zone. Use this to prevent repettion of the same code
+If this field is set, the same prices apply, that are defined in the given alternative target zone. Use this to prevent repetition of the same code
 
 ### **tariffs**
 
@@ -466,4 +469,4 @@ If this field is set, the same prices apply, that are defined in the given alter
 
 **Example Value(s):** ZONE_1_TARIFF, WORLD_TARIFF
 
-Set this field to link to a specific tariff. The given tariff must be defined in the same way as a zone. This field will be looked at, if the user can book additional products to lower the costs. The selecti
+Set this field to link to a specific tariff. The given tariff must be defined in the same way as a zone. This field will be looked at, if the user can book additional products to lower the costs.

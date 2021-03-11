@@ -1,8 +1,10 @@
-# Roaming-Tool
+# Roaming Tool
+
+**Note:** This project follows the [code null guidelines](https://github.com/code-null/organization/blob/main/guidelines.md) in version 2.0.0.0
 
 The Roaming-Tool helps finding out the costs for international roaming. In this version there is just dummy data.
 
-This program only provides the frontend and the expected datastructure.
+This program only provides the frontend and the expected data structure.
 
 ## Status
 
@@ -12,15 +14,15 @@ Latest Stable Version: none
 
 ## Technical Details
 
-| Stack   | Technical ID | Reference Name | Official Name | Type    | Requires Accounts | Technology    |
-| ------- | ------------ | -------------- | ------------- | ------- | ----------------- | ------------- |
-| Program | PRT05        | roamingTool    | Roaming-Tool  | Inquire | false             | Ionic/Angular |
+| Segment | Technical ID | Public ID       | Official Name | Type    | Requires Accounts | Technology    | Versioning                                    |
+| ------- | ------------ | --------------- | ------------- | ------- | ----------------- | ------------- | --------------------------------------------- |
+| Program | PRT05        | codnRoamingTool | Roaming-Tool  | Inquire | false             | Ionic/Angular | [CNV 1.0.01](github.com/code-null/versioning) |
 
-## Dependencies to other Devices, Server, Programms, Components
+## Dependencies to other Devices, Server, Programs, Components
 
 None
 
-## Databases
+## Direct Access Databases
 
 None
 
@@ -30,7 +32,9 @@ None
 
 ## Notes
 
-The full data set needs to be provided from the service carrier. Only the list of countries is provided.
+The tool can be modified to get its data from a different source. This project has its data source in .json files on the same server.
+
+The full data set needs to be provided from the service carrier or created by someone else. Only the list of countries is provided.
 
 ## License
 

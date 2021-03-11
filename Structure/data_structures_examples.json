@@ -2,7 +2,7 @@
     "countries": [
         {
             "name": "Germany",
-            "zone": "EUROPE",
+            "zone": {"postpaid": "EUROPE", "prepaid":"EUROP_PREPAID"},
             "isHome": true
         },
         {
