@@ -17,19 +17,15 @@ The following fields are available.
 
 ### **name**
 
----
-
 **Type:** string
 
 **Mandatory:** true
 
 **Example Value(s):** Germany
 
-Name of the country.
+Name of the country. Put it as the key
 
 ### **zone**
-
----
 
 **Type:** string
 
@@ -41,8 +37,6 @@ Identifier of the default zone. This will be used if no other specific zone was 
 
 ### **isHome**
 
----
-
 **Type:** boolean
 
 **Mandatory:** false
@@ -52,8 +46,6 @@ Identifier of the default zone. This will be used if no other specific zone was 
 Identifies the country as the users home country. If this country is then selected as the users location, it will not be treated as roaming, but rather as an international call
 
 ### **inZone**
-
----
 
 **Type:** string
 
@@ -65,8 +57,6 @@ Alternative zone for prices for inbound calls, that should be used if it differs
 
 ### **outZone**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -76,8 +66,6 @@ Alternative zone for prices for inbound calls, that should be used if it differs
 Alternative zone for prices for outbound calls, that should be used if it differs from the default zone.
 
 ### **smsZone**
-
----
 
 **Type:** string
 
@@ -89,8 +77,6 @@ Alternative zone for SMS prices, that should be used if it differs from the defa
 
 ### **mmsZone**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -101,8 +87,6 @@ Alternative zone for MMS prices, that should be used if it differs from the defa
 
 ### **dataZone**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -112,8 +96,6 @@ Alternative zone for MMS prices, that should be used if it differs from the defa
 Alternative zone for data prices, that should be used if it differs from the default zone.
 
 ### **comments**
-
----
 
 **Type:** \[{"content": string, "displayType": string}]
 
@@ -131,8 +113,6 @@ Define comments that should be displayed depending on the display type. You can 
 
 ### **altCountry**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -142,8 +122,6 @@ Define comments that should be displayed depending on the display type. You can 
 Setting this field will get the prices based on the provided alternative country. If you use this, you can have the zone field be an empty string. This option is meant to be used for country or places that belong to a different one. E.g.: Madeira would define Portugal as an altCountry.
 
 ### **partners**
-
----
 
 **Type:** \[string]
 
@@ -159,8 +137,6 @@ The following fields are avaiable.
 
 ### **zoneID**
 
----
-
 **Type:** string
 
 **Mandatory:** true
@@ -172,8 +148,6 @@ The following fields are avaiable.
 The unique identifier of the zone.
 
 ### **inCalls**
-
----
 
 **Type:** string
 
@@ -187,8 +161,6 @@ The price of inbound calls.
 
 ### **outCallsMobileDefault**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -200,8 +172,6 @@ The price of inbound calls.
 The price of outbound calls to a mobile phone. If not given, all outbound definitions need to have an outCallsMobile field.
 
 ### **outCallsLandDefault**
-
----
 
 **Type:** string
 
@@ -215,8 +185,6 @@ The price of outbound calls to a landline. If not given, all outbound definition
 
 ### **inSMS**
 
----
-
 **Type:** string
 
 **Mandatory:** true
@@ -228,8 +196,6 @@ The price of outbound calls to a landline. If not given, all outbound definition
 The price of incoming SMS.
 
 ### **inMMS**
-
----
 
 **Type:** string
 
@@ -243,8 +209,6 @@ The price of incoming SMS.
 
 ### **outSMSDefault**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -256,8 +220,6 @@ The price of incoming SMS.
 The default price of outgoing SMS. If not given, all outbound definitions need to have an outSMS field.
 
 ### **outMMSDefault**
-
----
 
 **Type:** string
 
@@ -271,8 +233,6 @@ The default price of outgoing MMS. If not given, all outbound definitions need t
 
 ### **data**
 
----
-
 **Type:** string
 
 **Mandatory:** true
@@ -284,8 +244,6 @@ The default price of outgoing MMS. If not given, all outbound definitions need t
 The price of outgoing MMS.
 
 ### **callMailbox**
-
----
 
 **Type:** string
 
@@ -299,8 +257,6 @@ The price of for connections to the mailbox. Will be the price for a connection 
 
 ### **zoneID of target zone or special tariff**
 
----
-
 **Type:** "zoneID of target zone": {"outCallsMobile"?: string, "outCallsLand"?: string, "outSMS"?: string, "outMMS"?: string, "tariffs" : string}
 
 **Mandatory:** false
@@ -312,8 +268,6 @@ The price of for connections to the mailbox. Will be the price for a connection 
 Holds the prices for services to the targeted location. Use the zoneID of the target zone as an identifier.If a target zone is not defined, no values will be displayed. If a target zone is defined as an empty object, the default values (ending with Default) will be used.
 
 ### **type**
-
----
 
 **Type:** string
 
@@ -327,8 +281,6 @@ Defines wether this zone will be registered as a tariff and displayed as a selec
 
 ### **displayName**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -340,8 +292,6 @@ Defines wether this zone will be registered as a tariff and displayed as a selec
 If given for a tariff, this will be used as the name displayed next to the radio button.
 
 ### **bookingPrice**
-
----
 
 **Type:** string
 
@@ -355,8 +305,6 @@ Shows the price, that this tariff will cost. Only needed for tariffs.
 
 ### **isEURoaming**
 
----
-
 **Type:** boolean
 
 **Mandatory:** false
@@ -368,8 +316,6 @@ Shows the price, that this tariff will cost. Only needed for tariffs.
 Defines wether this zone falls under the EU regulations for roaming. Set this to true if the users home country belongs to the EU and this zone is meant for other EU countries. If this field ist set to true, it will show a EU flag as an additional hint.
 
 ### **zoneComments**
-
----
 
 **Type:** \[{"content": string, "displayType": string}]
 
@@ -389,8 +335,6 @@ Define comments that should be displayed depending on the display type. You can 
 
 ### **outCallsMobile**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -402,8 +346,6 @@ Define comments that should be displayed depending on the display type. You can 
 The price of outbound calls to a mobile phone. If not given, the field outCallsMobileDefault needs to be given. If both fields are given, outCallsMobile will takes precedence over outCallsMobileDefault.
 
 ### **outCallsLand**
-
----
 
 **Type:** string
 
@@ -417,8 +359,6 @@ The price of outbound calls to a landline. If not given, the field outCallsLandD
 
 ### **outSMS**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -430,8 +370,6 @@ The price of outbound calls to a landline. If not given, the field outCallsLandD
 The price of outgoing SMS. If not given, the field outSMSDefault needs to be given. If both fields are given, outSMS will takes precedence over outSMSDefault.
 
 ### **outMMS**
-
----
 
 **Type:** string
 
@@ -445,8 +383,6 @@ The price of outgoing MMS. If not given, the field outMMSDefault needs to be giv
 
 ### **altZone**
 
----
-
 **Type:** string
 
 **Mandatory:** false
@@ -458,8 +394,6 @@ The price of outgoing MMS. If not given, the field outMMSDefault needs to be giv
 If this field is set, the same prices apply, that are defined in the given alternative target zone. Use this to prevent repetition of the same code
 
 ### **tariffs**
-
----
 
 **Type:** \[string]
 

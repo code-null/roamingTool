@@ -1,27 +1,23 @@
 {
-    "countries": [
-        {
-            "name": "Germany",
+    "countries": {
+        "Germany": {
             "zone": {"postpaid": "EUROPE", "prepaid":"EUROP_PREPAID"},
             "isHome": true
         },
-        {
-            "name": "Albania",
+        "Albania": {
             "zone": "EUROPE_1",
             "dataZone": "DATA_EUROPE_1",
             "partners": ["Fictional Carrier Albania Inc"]
         },
-        {
-            "name": "Madeira",
+        "Madeira":{
             "zone": "",
-            "altCountrey": "Portugal"
+            "altCountry": "Portugal"
         },
-        {
-            "name": "Cuba",
+         "Cuba":{  
             "zone": "",
             "comments": [{"content": "No roaming possible.", "displayType": "USER"}]
         }
-    ],
+    },
     "zones":{
         "EUROPE":{
             "isEURoaming" : "true",
@@ -35,7 +31,7 @@
             "data" : "free",
     
             "EUROPE": {},
-            "WOLRD": {
+            "WORLD": {
                 "outCallsMobile": "1,45 €/Min.",
                 "outCallsLand": "RT_MOBILE"
             },
@@ -59,7 +55,7 @@
             "data" : "free",
             "outbound": {
                 "EUROPE": {},
-                "WOLRD": {
+                "WORLD": {
                     "outCallsMobile": "0,45 €/Min.",
                     "outCallsLand": "RT_MOBILE"
                 },
